@@ -4,7 +4,8 @@ var asciiHeart = require("ascii-heart");
 // Print the heart with the default options
 console.log(asciiHeart());
 
-// Print a heart with the specified options
+// Print a heart with the specified for the
+// height, width, a desired and trimming set to off.
 console.log(
   asciiHeart(20, 20, {
     fill: "🌮",
