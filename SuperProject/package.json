@@ -1,0 +1,14 @@
+{
+  "name": "superproject",
+  "version": "1.0.0",
+  "description": "lab 1 task 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alan cabrera",
+  "license": "ISC",
+  "dependencies": {
+    "marvel-characters": "^1.0.3"
+  }
+}

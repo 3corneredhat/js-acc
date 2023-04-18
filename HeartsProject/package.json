@@ -1,0 +1,14 @@
+{
+  "name": "heartsproject",
+  "version": "1.0.0",
+  "description": "a hearts project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alan cabrera",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-heart": "^2.0.0"
+  }
+}
