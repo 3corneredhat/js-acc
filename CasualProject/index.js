@@ -1,5 +1,7 @@
+// Bring in the dependency
 var casual = require("casual");
-
+// log the message with a template literal and calling the package
+// as necessary to generate the desired data
 console.log(`Hello there ${casual.first_name} ${casual.last_name}!
 How was your trip to ${casual.country}?
 Did you get to visit ${casual.city}?
