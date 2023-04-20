@@ -37,8 +37,8 @@ function generateFivePokemon() {
         pokemon: pName,
         // generate a random number and take the floor to get
         // an integer.
-        atk: Math.floor(Math.random() * (ATK_MAX - ATK_MIN) + ATK_MIN),
-        def: Math.floor(Math.random() * (DEF_MAX - DEF_MIN) + DEF_MIN),
+        attack: Math.floor(Math.random() * (ATK_MAX - ATK_MIN) + ATK_MIN),
+        defense: Math.floor(Math.random() * (DEF_MAX - DEF_MIN) + DEF_MIN),
       };
       arr.push(tempPokemon);
       count++;
@@ -61,15 +61,15 @@ function battleHandler() {
   // use the first two pokemon for the battle
   // when the first pokemon has a greater attack than defense
   // of the second
-  if (pokemon[0].atk > pokemon[1].def) {
-    return `And the winner is ${pokemon[0]["pokemon"]} with an attack of ${pokemon[0].atk} and a defense of ${pokemon[0].def} versus ${pokemon[1]["pokemon"]} who has an attack of ${pokemon[1].atk} and a defense of ${pokemon[1].def}`;
+  if (pokemon[0].attack > pokemon[1].defense) {
+    return `And the winner is ${pokemon[0]["pokemon"]} with an attack of ${pokemon[0].attack} and a defense of ${pokemon[0].defense} versus ${pokemon[1]["pokemon"]} who has an attack of ${pokemon[1].attack} and a defense of ${pokemon[1].defense}`;
   } // when the second pokemon has a greater attack than defense
   // of the first
-  else if (pokemon[1].atk > pokemon[0].def) {
-    return `And the winner is  ${pokemon[1]["pokemon"]} had an attack of ${pokemon[1].atk} and a defense of ${pokemon[1].def} versus ${pokemon[0]["pokemon"]} who has an attack of ${pokemon[0].atk} and a defense of ${pokemon[0].def}`;
+  else if (pokemon[1].attack > pokemon[0].defense) {
+    return `And the winner is  ${pokemon[1]["pokemon"]} had an attack of ${pokemon[1].attack} and a defense of ${pokemon[1].defense} versus ${pokemon[0]["pokemon"]} who has an attack of ${pokemon[0].attack} and a defense of ${pokemon[0].defense}`;
   }
   // when neither of the cases is true, then there is a tie
-  return `There is a tie! ${pokemon[0]["pokemon"]} had an attack of ${pokemon[0].atk} and a defense of ${pokemon[0].def} versus ${pokemon[1]["pokemon"]} who has an attack of ${pokemon[1].atk} and a defense of ${pokemon[1].def}`;
+  return `There is a tie! ${pokemon[0]["pokemon"]} had an attack of ${pokemon[0].attack} and a defense of ${pokemon[0].defense} versus ${pokemon[1]["pokemon"]} who has an attack of ${pokemon[1].attack} and a defense of ${pokemon[1].defense}`;
 }
 app.get("/battle", (req, res) => res.send(`${battleHandler()}`));
 
