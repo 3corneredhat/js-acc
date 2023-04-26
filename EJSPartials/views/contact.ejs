@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs", {title: "Contact"}) %>
+<h1>This is the contact page!</h1>
+<form action="postdata" method="POST">
+    <label>First Name
+        <input type="text" name="fName">
+    </label>
+    <label>Last Name
+        <input type="text" name="lName">
+    </label>
+    <label>Password
+        <input type="password" name="pWord">
+    </label>
+    <button type="submit">Submit</button>
+</form>
+<%- include("partials/footer.ejs") %>
