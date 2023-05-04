@@ -1,23 +1,22 @@
-<form>
-    <fieldset class="form-group">
-    <div class="row justify-content-center" >
-        <div class="col-md-4">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                    value="option1">
-                <label class="form-check-label" for="inlineRadio1">USD</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                    value="option2">
-                <label class="form-check-label" for="inlineRadio2">GBP</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                    value="option3">
-                <label class="form-check-label" for="inlineRadio3">EUR</label>
-            </div>
+<!-- Here we use the grid system for the layout-->
+<!-- We add a margin to the top and bottom of 3 -->
+<div class="row justify-content-center my-3">
+    <!-- I declare the size of the column for xs and s devices -->
+    <div class="col-xs-3 col-s-3">
+        <!-- Each button needs to be made inline -->
+        <!-- And they will each return a string value -->
+        <!-- Corresponding to each button -->
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="currencyRadio" value="USD">
+            <label class="form-check-label" for="inlineRadio1">USD</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="currencyRadio" value="GBP">
+            <label class="form-check-label" for="inlineRadio2">GBP</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="currencyRadio" value="EUR">
+            <label class="form-check-label" for="inlineRadio3">EUR</label>
         </div>
     </div>
-</fieldset>
-</form>
+</div>

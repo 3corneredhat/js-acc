@@ -1,18 +1,17 @@
+<!-- This will rerender the card but add the price that was return from the API -->
 <%- include('../partials/header'); %>
   <main>
-    <!-- wrap contents of main in a div -->
     <div>
-      <!-- Use a card for the content and center it -->
-      <div class="card text-center position-absolute top-50 start-50 translate-middle">
+      <div class="card text-center position-absolute top-50 start-50 translate-middle ">
         <img src="/bitcoin-bitcoins.gif" class="card-img-top">
         <div class="card-body">
           <h1 class="card-title">BitCoin Price App</h1>
-          <!-- Perform POST with the radio buttons -->
           <form action="/result" method="POST">
             <%- include('../partials/radio') %>
               <button type="submit" class="btn btn-primary btn-lg"> Get Price</button>
           </form>
+          <!-- Include the price -->
+          <%- include('../partials/price') %>
         </div>
-      </div>
   </main>
   <%- include('../partials/footer'); %>

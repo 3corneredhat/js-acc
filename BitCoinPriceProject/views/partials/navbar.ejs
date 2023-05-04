@@ -1,16 +1,32 @@
-<nav
-  class="navbar navbar-expand-lg navbar-dark"
-  style="background-color: #27272a"
->
-  <a class="navbar-brand" href="/">BitCoin Price</a>
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="/">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="https://shorturl.at/bijI2" target="_blank"
-        >About</a
-      >
-    </li>
-  </ul>
+<!-- Modified the sample bootstrap navbar -->
+<!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
+<nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark" style="background-color: #27272a">
+  <!-- container that is responsive -->
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">BitCoin Price</a>
+    <!-- This button creates a hamburger menu for smaller devices -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://shorturl.at/bijI2" target="_blank">About</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Doesn't do anything..." aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
 </nav>
