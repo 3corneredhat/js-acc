@@ -1,0 +1,32 @@
+body {
+  background-color: #3f3f46;
+  background-image: url("./images/theater.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 50px;
+  width: auto;
+  height: auto;
+}
+
+#landing,
+#results,
+#error {
+  background-color: rgb(228, 228, 231, 0.5);
+}
+
+#landing,
+#error {
+  text-align: center;
+}
+
+#error_img {
+  display: block;
+  max-width: 15%;
+  height: auto;
+}
+
+form {
+  color: white;
+}
