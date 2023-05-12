@@ -1,12 +1,20 @@
 <%- include('../partials/header'); %>
+<!-- Place everything inside a container with padding on ton and bottom -->
     <div class="container-fluid pt-5 pb-5" id="results">
+      <!-- Use the grid system with a minimum of a 1 column, medium size of 3, and gutters size of 4-->
       <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+        <!-- For each element in the results (an array) -->
       <%data.forEach(el => { %> 
+        <!-- generate a card with x-axis and y-axis margins to 3 and max width of 44px -->
         <div class="card my-3 mx-3 " style="max-width: 400px;">
+          <!-- The card is horizontal and uses a grid system -->
+          <!-- Create a row -->
           <div class="row g-0">
+            <!-- Add a column to the row for the poster -->
             <div class="col-md-4 ">
               <img src= <%= el.poster_path === null ? "images/error.gif" : `https://www.themoviedb.org/t/p/w1280${el.poster_path}`%> class="img-fluid rounded-start pt-5">
             </div>
+            <!-- Add a column to row for the card body -->
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title"><%= el.original_title %></h5>
